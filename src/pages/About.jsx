@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import { NavBar } from "../components/NavBar"
 
 export const About = () => {
@@ -7,6 +8,8 @@ export const About = () => {
             <h2 className="text-center py-20 text-black text-4xl font-bold">
                 This is About Page
             </h2>
+            <NavLink to="/about/team">Team</NavLink>
+            <NavLink to="/about/company">Company</NavLink>
         </div>
     )
 }
