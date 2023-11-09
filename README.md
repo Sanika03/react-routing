@@ -1,2 +1,1 @@
-# react-routing
-Basic routing illustration.
+# React Routing Setup
