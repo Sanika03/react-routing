@@ -13,29 +13,29 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About/>,
-    children: [
-      {
-        path: "company",
-        element: <Company/>
-      },
-      {
-        path: "team",
-        element: <Team/>
-      },
-    ] 
+    // children: [
+    //   {
+    //     path: "company",
+    //     element: <Company/>
+    //   },
+    //   {
+    //     path: "team",
+    //     element: <Team/>
+    //   },
+    // ] 
   },
   {
     path: "/profile",
     element: <Profile/> 
   },
-  // {
-  //   path: "/about/company",
-  //   element: <Company/>
-  // },
-  // {
-  //   path: "/about/team",
-  //   element: <Team/>
-  // },
+  {
+    path: "/about/company",
+    element: <Company/>
+  },
+  {
+    path: "/about/team",
+    element: <Team/>
+  },
 ])
 
 function App() {
