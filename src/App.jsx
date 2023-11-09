@@ -4,6 +4,8 @@ import { About } from "./pages/About";
 import { Profile } from "./pages/Profile";
 import { Company } from "./pages/Company";
 import { Team } from "./pages/Team";
+import { Login } from "./pages/Login";
+import { ProtectedRoute } from "./components/ProtectedRoute";
 
 const router = createBrowserRouter([
   {
@@ -22,11 +24,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/profile",
-    element: <Profile/> 
+    element: <Profile/>
   },
   {
     path: "/about/team/:teamId",
     element: <Team/>
+  },
+  {
+    path: "/login",
+    element: <Login/>
   },
 ])
 
