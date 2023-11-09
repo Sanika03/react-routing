@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: <About/>,
     children: [
       {
-        path: "company",
+        path: "company/:companyId",
         element: <Company/>
       }
     ] 
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
     element: <Profile/> 
   },
   {
-    path: "/about/team",
+    path: "/about/team/:teamId",
     element: <Team/>
   },
 ])
